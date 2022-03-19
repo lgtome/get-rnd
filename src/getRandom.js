@@ -23,7 +23,7 @@ export function getRnd(count = 10000, difficult = 3) {
             } else numbers[number] = value
         } else numbers[number] = 1
     }
-    console.log('works rnd')
+    console.log('[Random function output with accuracy]')
     return numbers
 }
 export function getRndDefault(count = 10000) {
@@ -35,6 +35,6 @@ export function getRndDefault(count = 10000) {
             numbers[number] = value
         } else numbers[number] = 1
     }
-    console.log('works default rnd')
+    console.log('[Default random function output]')
     return numbers
 }
