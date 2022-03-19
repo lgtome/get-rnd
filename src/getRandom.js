@@ -21,7 +21,7 @@ export function getRnd(count = 10000, difficult = 3) {
                 }
                 numbers[newNumber] = parseInt(numbers[newNumber]) + 1
             } else numbers[number] = value
-        } else numbers[number] = 1
+        } else numbers[number] = 0
     }
     console.log('[Random function output with accuracy]')
     return numbers
@@ -33,7 +33,7 @@ export function getRndDefault(count = 10000) {
         if (numbers[number] >= 0) {
             const value = parseInt(numbers[number]) + 1
             numbers[number] = value
-        } else numbers[number] = 1
+        } else numbers[number] = 0
     }
     console.log('[Default random function output]')
     return numbers
